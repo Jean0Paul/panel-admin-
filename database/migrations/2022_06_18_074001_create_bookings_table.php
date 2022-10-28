@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('guests');
             $table->string('date');
             $table->string('time');
+            $table->integer('table_number');
             $table->string('reservation_type');
             $table->string('special_request')->nullable();
             $table->timestamps();

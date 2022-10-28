@@ -164,7 +164,7 @@ return [
     // ---------------------------------------------------------------------
     "delivery_not_available" => "Sorry, currently we are not delivering in your address",
     //Alerts
-    "are_you_sure" => "Are you sure?",  
+    "are_you_sure" => "Are you sure?",
     "record_safe" => "Your data is safe :)",
     "yes" => "Yes",
     "no" => "Cancel",
