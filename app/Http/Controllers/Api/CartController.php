@@ -53,6 +53,7 @@ class CartController extends Controller
             return response()->json(['status'=>0,'message'=>trans('messages.invalid_cart')],200);
         }
     }
+
     public function deletecartitem(Request $request)
     {
         if ($request->cart_id == "") {
@@ -67,6 +68,7 @@ class CartController extends Controller
             return response()->json(['status'=>0,'message'=>trans('messages.invalid_cart')],200);
         }
     }
+
     public function getcart(Request $request)
     {
         if ($request->user_id == "") {
