@@ -151,6 +151,7 @@ class HomeController extends Controller
         $cartdata = Cart::select(DB::raw('COUNT(cart.id) as total_count'), DB::raw('(case when SUM(cart.qty*cart.item_price) is null then 0 else SUM(cart.qty*cart.item_price) end) as sub_total'))->where('cart.user_id', $user_id)->first();
         return response()->json(["status" => 1, "message" => trans('messages.success'), "trendingitems" => $trendingitems, "todayspecial" => $todayspecial, "recommendeditems" => $recommendeditems, "checkaddons" => $checkaddons, "appdata" => helper::appdata(), "getprofile" => $getprofile, "cartdata" => $cartdata, "banners" => @$banners, "categories" => $categorydata, "testimonials" => $testimonials], 200);
     }
+
     public function isopenclose(Request $request)
     {
         date_default_timezone_set(helper::appdata()->timezone);
