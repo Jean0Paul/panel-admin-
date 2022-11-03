@@ -227,13 +227,13 @@ return [
   "deduct_money" => "Deduct money",
   //Reviews
   //Report
-  "start_date" => "Start date",
-  "end_date" => "End date",
+  "start_date" => "Date de début",
+  "end_date" => "Date de fin",
   //Notification
-  "send_notification" => "Send Notification",
-  "title" => "Title",
+  "send_notification" => "Envoyer une notification",
+  "title" => "Titre",
   //About & setting
-  "about_content" => "About Content",
+  "about_content" => "À propos",
   "about_image" => "About Image",
   "facebook_link" => "Facebook Link",
   "youtube_link" => "Youtube Link",
