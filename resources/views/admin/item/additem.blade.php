@@ -183,20 +183,25 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <div class="col-9">
-                        <label for="image" class="col-form-label">{{ trans('labels.image') }} (512x512)
-                          ({{ trans('labels.png') }})</label>
-                        <input type="file" class="form-control" name="image[]" id="image" accept="image/*"
-                          multiple>
-                        @error('image')
-                          <span class="text-danger">{{ $message }}</span>
-                        @enderror
-                        <div class="row pl-2 gallery"></div>
-                      </div>
-                      <div class="col-3">
-                        <label for="quantity" class="col-form-label">Quantité</label>
-                        <input type="number" class="form-control" name="quantity" id="quantity"
-                          placeholder="quantité">
+                      <div class="row">
+                        <div class="col-9">
+                          <label for="image" class="col-form-label">{{ trans('labels.image') }} (512x512)
+                            ({{ trans('labels.png') }})</label>
+                          <input type="file" class="form-control" name="image[]" id="image" accept="image/*"
+                            multiple>
+                          @error('image')
+                            <span class="text-danger">{{ $message }}</span>
+                          @enderror
+                          <div class="row pl-2 gallery"></div>
+                        </div>
+                        <div class="col-3">
+                          <label for="quantity" class="col-form-label">Quantité</label>
+                          <input type="number" class="form-control" name="quantity" id="quantity"
+                            placeholder="quantité" required min="0">
+                          @error('quantity')
+                            <span class="text-danger">{{ $message }}</span>
+                          @enderror
+                        </div>
                       </div>
                     </div>
                   </div>
